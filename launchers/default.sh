@@ -13,8 +13,9 @@ dt-launchfile-init
 # NOTE: Use `dt-exec COMMAND` to run the main process (blocking process)
 
 # launching app
-dt-exec echo "This is an empty launch script. Update it to launch your application."
 
+dt-exec  rosrun my_package camera_node.py
+dt-exec rosrun my_package wheel_control_node.py
 
 # ----------------------------------------------------------------------------
 # YOUR CODE ABOVE THIS LINE
